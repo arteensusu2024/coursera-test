@@ -1,2 +1,5 @@
 mkdir docs
 mv README.md index.html site docs/
+source: docs
+destination: docs/_site
+bundle exec jekyll serve

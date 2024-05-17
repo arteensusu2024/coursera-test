@@ -1,0 +1,9 @@
+source: docs
+destination: docs/_site
+title: Coursera test
+description: Esperemos que funcione
+baseurl:
+url: https://arteensusu2024.github.io
+theme: jekyll-theme-merlot
+
+   

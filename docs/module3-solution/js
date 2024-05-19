@@ -1,0 +1,22 @@
+$(document).ready(function(){
+  // Define menu items for mobile view
+  var menuItems = ['Chicken', 'Beef', 'Sushi'];
+
+  // Populate the mobile menu
+  var mobileMenu = $('.navbar-collapse ul');
+  $.each(menuItems, function(index, item) {
+    mobileMenu.append('<li><a href="#' + item.toLowerCase() + '">' + item + '</a></li>');
+  });
+
+  // Smooth scrolling for anchor links
+  $('a[href*="#"]').on('click', function(e) {
+    e.preventDefault();
+
+    var target = $(this.hash);
+    if (target.length) {
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+    }
+  });
+});

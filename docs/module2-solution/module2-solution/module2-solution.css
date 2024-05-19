@@ -25,18 +25,45 @@ header {
     position: relative;
     border: 1px solid black;
     padding: 20px;
-    background-color: #f0f0f0;
     width: 100%;
 }
 
+/* Adding background colors and text color for each section */
+.section:nth-child(1) {
+    background-color: #f8d7da; /* Light red background */
+    color: #721c24; /* Dark red text */
+}
+
+.section:nth-child(2) {
+    background-color: #d4edda; /* Light green background */
+    color: #155724; /* Dark green text */
+}
+
+.section:nth-child(3) {
+    background-color: #d1ecf1; /* Light blue background */
+    color: #0c5460; /* Dark blue text */
+}
+
+/* Title Styling */
 .section .title {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: #ddd;
     padding: 5px 10px;
     border: 1px solid black;
     font-weight: bold;
+    background-color: #ffc107; /* Yellow background */
+    color: #000; /* Black text */
+}
+
+.section:nth-child(2) .title {
+    background-color: #28a745; /* Green background */
+    color: #fff; /* White text */
+}
+
+.section:nth-child(3) .title {
+    background-color: #007bff; /* Blue background */
+    color: #fff; /* White text */
 }
 
 .section p {

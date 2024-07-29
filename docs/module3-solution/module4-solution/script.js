@@ -3,10 +3,16 @@
 
   for (var i = 0; i < names.length; i++) {
     var firstLetter = names[i].charAt(0).toLowerCase();
+    var message = "";
+    
     if (firstLetter === 'j') {
-      byeSpeaker.speak(names[i]);
+      message = byeSpeaker.speak(names[i]);
     } else {
-      helloSpeaker.speak(names[i]);
+      message = helloSpeaker.speak(names[i]);
     }
+    
+    // Append message to the output div
+    var outputDiv = document.querySelector('.output');
+    outputDiv.innerHTML += message + "<br>";
   }
 })();
